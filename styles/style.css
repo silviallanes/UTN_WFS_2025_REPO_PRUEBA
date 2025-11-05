@@ -47,6 +47,27 @@ li {
     line-height: 64px;
 }
 
+.title-hero {
+    margin-bottom: 16px;
+    font-size: 80px;
+    height:240px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -4px;
+    text-align: left;
+    color: var(--neutral-100)
+}
+
+.btn-hero {
+    background-color: var(--neutral-0);
+    width: 186px;
+    height: 48px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
 .subtitle {
     font-size: 40px;
     font-weight: 400;
@@ -118,6 +139,7 @@ li {
 .feature-article__image img {
     width: 100%;
 }
+
 
 .section-header {
     display: flex;
@@ -195,29 +217,24 @@ li {
 
 .enlace-boton {
     font-family: verdana, arial, sans-serif;
-    font-size: 10pt;
+    font-size: 10px;
     font-weight: bold;
-    height:50px;
+    height: 50px;
     padding: 20px;
     color: var(--neutral-600);
     background-color: rgb(247, 248, 248);
     text-decoration: none;
-    border-style:solid;
+    border-style: solid;
     text-align: center;
-    border-radius: 15%;
+    border-radius: 10px;
 }
 
 .enlace-boton:hover {
-    background-color:#1d1e20;
-    color:#ffffff;
+    background-color: #1d1e20;
+    color: #ffffff;
 }
 
-.bandera{
-    width:40px;
-    height:25px;
-    justify-content: right;
-    border-radius: 15%;
-}
+
 .btn-idioma {
     border: none;
     background-color: #ffffff;
@@ -236,13 +253,20 @@ btn-idioma:hover {
     text-align: right;
 }
 
-.hero-black-friday{
-    display:flex;
+.container-hero {
+    align-items: center;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:50px;
+    background-color: #683ee6;
+    width: 100%;
 }
 
+.container-texto-hero {
+
+    color: var(--neutral-0);
+
+}
 
 .h-social-icons {
     display: flex;
