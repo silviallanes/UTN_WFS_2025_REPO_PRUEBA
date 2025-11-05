@@ -370,7 +370,7 @@ btn-idioma:hover {
     display: flex;
     flex-direction: row;
     color: var(--neutral-600);
-    text-align:end;
+    justify-content:flex-end;
     gap:40px;
     text-align: center;
     
