@@ -87,6 +87,13 @@ li {
     text-decoration: none;
     text-align: center;
 }
+.linkymas {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-500);
+    text-decoration: none;
+    text-align: left;
+}
 
 .container-menu-navegacion .link {
     color: var(--neutral-600);
@@ -190,8 +197,6 @@ li {
 .container-menu-navegacion {
     display: flex;
     flex-direction: row;
-    /*text-align: center;
-    align-content: left;*/
     gap: 30px;
     color: #1d1e20;
 }
@@ -277,16 +282,6 @@ btn-idioma:hover {
 
 }
 
-.container-copyright-footer {
-    margin-top: 40px;
-    display: flex;
-    justify-content: row;
-    align-content: space-between;
-    gap: 24px;
-    font-size: 14px;
-    font: weight 80px;
-}
-
 .paragraph-footer {
     line-height: 24px;
     font-size: var(--ff-primary);
@@ -309,56 +304,86 @@ btn-idioma:hover {
     color: var(--neutral-600);
 }
 
-.feature-tarjeta {
-    display: flex;
-    flex-direction: row;
-    align-content: start;
-    width: 70px;
-    height: 28px;
-    gap: 8px;
-}
+
 
 .container-footer {
     width: 62%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /*align-self: center;*/
+    background-color: var(--neutral-100);
+    gap: 20px;
+}
+.container-footer-copyright{
+    width: 62%;
+    display: flex;
+    flex-direction: row;
     align-self: center;
     background-color: var(--neutral-100);
     gap: 20px;
 }
 
-.footer-logo-redes {
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.container-footer-izquierdo{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+    width:50%; 
+    gap:20px;
+}
+.container-footer-derecho{
+    display:flex;
+    flex-direction:column;
+    justify-content: end;
+    width:50%;
+    gap:20px;
+}
+.logo-hostinger-footer{
+    justify-content:left;
+
 }
 
-.section-container-tarjetas {
+.feature-tarjeta {
+    
+    height: 35px;
+    width: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    /*align-items: center;*/
+    justify-content:left;
+    border-radius: 10px;
+    gap: 8px;
+}
+.container-footer-derecho{
+    display:flex;
+    flex-direction:column;
+    align-items:right;
 }
 
+.h-social-icons{
+    display:flex;
+    flex-direction:row;
+    align-items: right;
+    gap:15px;
+}
 .container-footer-politicas {
     display: flex;
     flex-direction: row;
     color: var(--neutral-600);
+    text-align:end;
+    gap:40px;
     text-align: center;
-    justify-items: right;
-    gap: 8px;
+    
 }
 
-.container-footer-politicas .bi-chevron-down {
+/*.container-footer-politicas .bi-chevron-down {
     font-size: 14px;
     color: var(--primary-500);
     font-weight: 400;
     height: 16px;
     line-height: 24px;
     align-self: center;
-}
+}*/
 
 
 .container-footer-politicas a {
@@ -367,14 +392,11 @@ btn-idioma:hover {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: -0.8px;
+    row-gap: 10px;
 }
 
 .container-footer-politicas a:hover {
     color: #673de5;
-}
-
-.container-footer-politicas:hover {
-    color: var(--primary-500);
 }
 
 
